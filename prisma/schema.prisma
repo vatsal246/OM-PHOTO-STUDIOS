@@ -1,0 +1,79 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Booking {
+  id              String   @id @default(uuid())
+  reference       String   @unique
+  customerName    String
+  mobile          String
+  email           String?
+  service         String
+  countryOrType   String?
+  appointmentDate String   // Format: YYYY-MM-DD
+  timeSlot        String   // Format: "10:30 AM", "04:00 PM"
+  numberOfPeople  Int      @default(1)
+  notes           String?
+  status          String   @default("PENDING") // PENDING, CONFIRMED, COMPLETED, CANCELLED
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model PrintOrder {
+  id               String   @id @default(uuid())
+  reference        String   @unique
+  customerName     String
+  mobile           String
+  printSize        String   // e.g. "4x6", "5x7", "A4", "Passport Size"
+  quantity         Int      @default(1)
+  finish           String   // "Glossy" or "Matte"
+  notes            String?
+  pickupPreference String   // "Same Day Pickup", "Next Day Morning", "Next Day Evening", etc.
+  filePaths        String   // JSON string array of stored file paths
+  fileNames        String   // JSON string array of original file names
+  status           String   @default("PENDING") // PENDING, PROCESSING, READY_FOR_PICKUP, COMPLETED, CANCELLED
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model Enquiry {
+  id        String   @id @default(uuid())
+  name      String
+  mobile    String
+  email     String?
+  service   String
+  message   String
+  status    String   @default("NEW") // NEW, CONTACTED, RESOLVED
+  createdAt DateTime @default(now())
+}
+
+model BusinessSetting {
+  id               String   @id @default("default")
+  businessName     String   @default("Om Photo Studio")
+  ownerName        String   @default("Dharmesh Pithwa")
+  whatsappNumber   String   @default("") // Empty by default; owner can set in Admin
+  phoneNumber      String   @default("") // Empty by default; owner can set in Admin
+  emailAddress     String   @default("") // Empty by default; owner can set in Admin
+  googleReviewUrl  String   @default("") // Empty by default; owner can set in Admin
+  pricesJson       String   @default("{}") // JSON string of service starting prices
+  holidayNotices   String   @default("") // Holiday notice or temporary message
+  openingHoursJson String   @default("{}") // JSON string for opening hours
+  updatedAt        DateTime @updatedAt
+}
+
+model GalleryItem {
+  id           String   @id @default(uuid())
+  title        String
+  category     String   // "passport", "visa", "portrait", "family", "prints", "digital"
+  description  String
+  imageUrl     String
+  isSample     Boolean  @default(true)
+  displayOrder Int      @default(0)
+  createdAt    DateTime @default(now())
+}
+

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgPrint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF" />
+      <stop offset="100%" stop-color="#DBEAFE" />
+    </linearGradient>
+    <filter id="stackShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="8" stdDeviation="6" flood-opacity="0.15" />
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgPrint)" />
+  <!-- Stack of photos -->
+  <g transform="translate(180, 60)" filter="url(#stackShadow)">
+    <!-- Back photo rotated -->
+    <rect x="0" y="0" width="220" height="160" rx="8" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2" transform="rotate(-8 110 80)" />
+    <!-- Middle photo -->
+    <rect x="10" y="15" width="220" height="160" rx="8" fill="#FFFFFF" stroke="#64748B" stroke-width="2" transform="rotate(4 120 95)" />
+    <!-- Front photo -->
+    <rect x="20" y="30" width="220" height="160" rx="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="2" />
+    <!-- Image landscape inside front photo -->
+    <rect x="35" y="45" width="190" height="110" rx="4" fill="#3B82F6" />
+    <polygon points="45,145 95,95 135,135 170,110 215,145" fill="#93C5FD" />
+    <circle cx="70" cy="75" r="14" fill="#FEF08A" />
+  </g>
+  <!-- Print Specs badges -->
+  <g transform="translate(120, 270)">
+    <rect x="0" y="0" width="105" height="40" rx="20" fill="#2563EB" />
+    <text x="52" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4 x 6 INCH</text>
+  </g>
+  <g transform="translate(245, 270)">
+    <rect x="0" y="0" width="105" height="40" rx="20" fill="#F59E0B" />
+    <text x="52" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">5 x 7 INCH</text>
+  </g>
+  <g transform="translate(370, 270)">
+    <rect x="0" y="0" width="105" height="40" rx="20" fill="#10B981" />
+    <text x="52" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">A4 FORMAT</text>
+  </g>
+  <text x="300" y="350" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#1E293B" text-anchor="middle">PREMIUM GLOSSY & LUSTER MATTE FINISH</text>
+  <text x="300" y="372" font-family="system-ui, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">Direct Pickup at Somvari Bazar Studio, Malad West</text>
+</svg>
+

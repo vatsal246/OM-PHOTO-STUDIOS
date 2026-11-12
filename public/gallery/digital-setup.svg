@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgDigi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0FDF4" />
+      <stop offset="100%" stop-color="#DCFCE7" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgDigi)" />
+  <!-- Smartphone representation with sent image -->
+  <g transform="translate(140, 40)">
+    <rect width="160" height="290" rx="24" fill="#0F172A" stroke="#334155" stroke-width="4" />
+    <!-- Screen -->
+    <rect x="8" y="24" width="144" height="240" rx="12" fill="#FFFFFF" />
+    <!-- WhatsApp green header banner -->
+    <rect x="8" y="24" width="144" height="35" rx="6" fill="#16A34A" />
+    <text x="80" y="47" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Om Photo Studio</text>
+    <!-- Message Bubble -->
+    <rect x="20" y="80" width="120" height="110" rx="8" fill="#DCF8C6" stroke="#86EFAC" stroke-width="1" />
+    <!-- Photo inside chat -->
+    <rect x="30" y="90" width="100" height="80" rx="4" fill="#DBEAFE" />
+    <circle cx="80" cy="120" r="18" fill="#3B82F6" />
+    <text x="80" y="180" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#166534" text-anchor="middle">US_Visa_600x600.jpg (240KB)</text>
+    <!-- Double tick blue -->
+    <text x="125" y="182" font-family="system-ui, sans-serif" font-size="9" fill="#2563EB">✓✓</text>
+  </g>
+  <!-- Cloud & Lightning download representation -->
+  <g transform="translate(340, 90)">
+    <circle cx="80" cy="60" r="50" fill="#38BDF8" opacity="0.2" />
+    <path d="M 50 80 Q 30 80 30 60 Q 30 40 50 40 Q 60 20 85 20 Q 115 20 120 45 Q 135 45 135 65 Q 135 80 115 80 Z" fill="#0284C7" />
+    <!-- Arrow down -->
+    <line x1="82" y1="55" x2="82" y2="105" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" />
+    <polyline points="65,95 82,112 99,95" fill="none" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="82" y="145" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#0369A1" text-anchor="middle">INSTANT DELIVERY</text>
+    <text x="82" y="165" font-family="system-ui, sans-serif" font-size="11" fill="#475569" text-anchor="middle">Via WhatsApp &amp; Email</text>
+    <text x="82" y="180" font-family="system-ui, sans-serif" font-size="10" fill="#64748B" text-anchor="middle">Web-ready for Portal Uploads</text>
+  </g>
+</svg>
+

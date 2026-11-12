@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF" />
+      <stop offset="100%" stop-color="#DBEAFE" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-opacity="0.1" />
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg1)" />
+  <!-- Grid backdrop pattern -->
+  <g stroke="#93C5FD" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.4">
+    <line x1="50" y1="0" x2="50" y2="400" />
+    <line x1="150" y1="0" x2="150" y2="400" />
+    <line x1="250" y1="0" x2="250" y2="400" />
+    <line x1="350" y1="0" x2="350" y2="400" />
+    <line x1="450" y1="0" x2="450" y2="400" />
+    <line x1="550" y1="0" x2="550" y2="400" />
+    <line x1="0" y1="100" x2="600" y2="100" />
+    <line x1="0" y1="200" x2="600" y2="200" />
+    <line x1="0" y1="300" x2="600" y2="300" />
+  </g>
+  <!-- Passport Photo Frame Demonstration -->
+  <g transform="translate(180, 50)" filter="url(#shadow)">
+    <!-- White card -->
+    <rect width="240" height="300" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2" />
+    <!-- Photo slot with standard 35x45 aspect -->
+    <rect x="30" y="25" width="180" height="230" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5" />
+    <!-- Biometric head outline -->
+    <circle cx="120" cy="105" r="42" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="2" />
+    <path d="M 65 220 C 65 165, 175 165, 175 220 Z" fill="#93C5FD" opacity="0.8" />
+    <!-- Measurement guide lines -->
+    <line x1="20" y1="63" x2="220" y2="63" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="4,3" />
+    <line x1="20" y1="147" x2="220" y2="147" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="4,3" />
+    <text x="120" y="278" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#1E3A8A" text-anchor="middle">STANDARD 35mm x 45mm</text>
+    <text x="120" y="292" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#64748B" text-anchor="middle">White Background • 80% Face Ratio</text>
+  </g>
+  <!-- Studio Lighting Lamps Representation -->
+  <g transform="translate(60, 110)">
+    <!-- Softbox Left -->
+    <polygon points="10,20 60,0 60,120 10,100" fill="#F59E0B" opacity="0.85" />
+    <line x1="35" y1="110" x2="35" y2="220" stroke="#1E293B" stroke-width="4" stroke-linecap="round" />
+    <line x1="10" y1="220" x2="60" y2="220" stroke="#1E293B" stroke-width="4" stroke-linecap="round" />
+    <circle cx="65" cy="60" r="15" fill="#FEF08A" opacity="0.6" />
+  </g>
+  <g transform="translate(480, 110)">
+    <!-- Softbox Right -->
+    <polygon points="50,20 0,0 0,120 50,100" fill="#F59E0B" opacity="0.85" />
+    <line x1="25" y1="110" x2="25" y2="220" stroke="#1E293B" stroke-width="4" stroke-linecap="round" />
+    <line x1="0" y1="220" x2="50" y2="220" stroke="#1E293B" stroke-width="4" stroke-linecap="round" />
+    <circle cx="-5" cy="60" r="15" fill="#FEF08A" opacity="0.6" />
+  </g>
+</svg>
+
